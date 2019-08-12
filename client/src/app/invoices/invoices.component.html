@@ -1,0 +1,65 @@
+<div class="container p-5">
+  <div class="row">
+    <h5>Invoice</h5>
+  </div>
+  <button type="button" class="btn btn-primary" routerLink="/invoices/add">
+    <i class="fa fa-plus mr-2"></i>
+    Create Invoice
+  </button>
+  <div class="dropdown float-right">
+    <button class="btn btn-secondary dropdown-toggle" type="button"
+     id="dropdown_invoiceFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Filter by Status
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdown_invoiceFilter">
+      <a class="dropdown-item" href="#">for Payment</a>
+      <a class="dropdown-item" href="#">for Delivery</a>
+      <a class="dropdown-item" href="#">Cancelled</a>
+    </div>
+  </div>  
+  <div class="row m-2">
+    <div class="card col">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table text-center vertical-align table-hover minified-header">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col"> </th>
+                <th scope="col">Invoice #</th>
+                <th scope="col">P.O. #</th>
+                <th scope="col" colspan="2">Customer Name</th>
+                <th scope="col">Date of Purchase</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <input type="checkbox" aria-label="Select row">
+                </td>
+                <th scope="row">I-001</th>
+                <td>P-1001</td>
+                <td colspan="2">John Doe</td>
+                <td>01-17-2014</td>
+                <td>75.00</td>
+                <td class="text-danger font-italic">for Payment</td>
+                <td>
+                  <button type="button" class="btn btn-success btn-sm mr-2"
+                    (click)="showPaymentModal()">
+                      Tender</button>
+                  <button type="button" class="btn btn-info btn-sm"
+                    (click)="showDeliveryModal()">Delivered</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-payment-modal></app-payment-modal>
+<app-delivery-modal></app-delivery-modal>

@@ -1,0 +1,106 @@
+<div class="container p-5">
+  <div class="row">
+    <p><a routerLink="/invoices">Invoices</a> > Create Invoice</p>
+  </div>
+  <div class="card">
+    <div class="card-body invoice">
+      <div class="row">
+        <div class="col-md-10">
+          <h6 class="d-inline">Invoice Number: </h6>
+          <p class="d-inline">I-10001</p>
+        </div>
+        <div class="col-md-2">
+            <h6 class="d-inline">Date: </h6>
+            <p class="d-inline">01/17/2014</p>
+          </div>
+      </div>
+      <div class="px-3 py-3">
+        <div class="row">
+          <div class="input-group input-group-sm col-md-4">
+            <span class="mr-2">P.O. Number: </span>
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+              <button type="button" class="btn btn-secondary">...</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="input-group input-group-sm col-md-9">
+            <span class="mr-2">Name: </span>
+            <p>John Doe</p>
+          </div>
+          <div class="input-group input-group-sm col-md-3">
+            <span class="mr-2">P.O. Date: </span>
+            <p class="">01/17/2014</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group input-group-sm col-md-7">
+            <span class="mr-2">Delivery Address: </span>
+            <p class="">2405 Laura st. cor. Floresca st. Pandacan, Manila 1011</p>
+          </div>
+        </div>
+        <div class="table-responsive mt-2">
+          <table class="table minified-header vertical-align text-center table-bordered table-input">
+            <thead class="thead-light">
+              <tr class="d-flex">
+                <th scope="col" class="col-md-1">Qty.</th>
+                <th scope="col" class="col-md-7">Item</th>
+                <th scope="col" class="col-md-2">Unit Price</th>
+                <th scope="col" class="col-md-2">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="d-flex">
+                <td class="col-md-1">
+                  <p>2</p>
+                </td>
+                <td class="col-md-7 table-input-group">
+                  <p>Marshmallow - Strawberry 150g</p>
+                </td>
+                <td class="col-md-2 table-input-group">
+                  <span class="input-group-text table-input-prepend">Php</span>
+                  <div><p>60.00</p></div>
+                </td>
+                <td class="col-md-2 table-input-group">
+                  <span class="input-group-text table-input-prepend">Php</span>
+                  <div><p>120.00</p></div>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-md-10">
+                  <span class="font-weight-bold float-right mr-2">
+                    Delivery Charge: 
+                  </span>
+                </td>
+                <td class="col-md-2 table-input-group">
+                  <span class="input-group-text table-input-prepend">Php</span>
+                  <div><p>0.00</p></div>
+                </td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-md-10">
+                  <span class="font-weight-bold float-right mr-2">
+                    Total Amount: 
+                  </span>
+                </td>
+                <td class="col-md-2 table-input-group">
+                  <span class="input-group-text table-input-prepend">Php</span>
+                  <div><p>120.00</p></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="float-right">
+        <button type="button" class="btn btn-primary m-2">
+          Create
+        </button>
+        <button type="button" class="btn btn-secondary m-2">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

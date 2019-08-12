@@ -1,0 +1,85 @@
+<div class="container p-5">
+  <div class="row">
+    <p><a routerLink="/purchaseOrders">Purchase Orders</a> > Add Purchase Order</p>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-10">
+          <h6 class="d-inline">P.O. Number: </h6>
+          <p class="text-danger d-inline">0000</p>
+        </div>
+        <div class="col-md-2">
+            <h6 class="d-inline">Date: </h6>
+            <p class="text-danger d-inline">01/17/2014</p>
+          </div>
+      </div>
+      <div class="row my-2 px-3">
+        <div class="input-group input-group-sm">
+          <span class="mr-2">Name: </span>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table minified-header vertical-align text-center table-bordered table-input">
+          <thead class="thead-light">
+            <tr class="d-flex">
+              <th scope="col" class="col-md-1">Qty.</th>
+              <th scope="col" class="col-md-5">Item</th>
+              <th scope="col" class="col-md-2">Unit Price</th>
+              <th scope="col" class="col-md-2">Selling Price</th>
+              <th scope="col" class="col-md-2">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="d-flex">
+              <td class="col-md-1">
+                <input type="text" class="table-input-single">
+              </td>
+              <td class="col-md-5 table-input-group">
+                <input type="text" class="table-input-prepend">
+                <div>
+                  <button type="button" class="btn btn-secondary table-input-append">...</button>
+                </div>
+              </td>
+              <td class="col-md-2 table-input-group">
+                <span class="input-group-text table-input-prepend">Php</span>
+                <div><input type="text" class="table-input-append"></div>
+              </td>
+              <td class="col-md-2 table-input-group">
+                <span class="input-group-text table-input-prepend">Php</span>
+                <div><input type="text" class="table-input-append"></div>
+              </td>
+              <td class="col-md-2 table-input-group">
+                <span class="input-group-text table-input-prepend">Php</span>
+                <div><input type="text" class="table-input-append"></div>
+              </td>
+            </tr>
+            <tr class="d-flex">
+              <td class="col-md-10">
+                <span class="font-weight-bold float-right m-2">
+                  Total Amount: 
+                </span>
+              </td>
+              <td class="col-md-2 table-input-group">
+                <span class="input-group-text table-input-prepend">Php</span>
+                <div><input type="text" class="table-input-append font-weight-bold text-danger"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-right clearfix small m-0">
+        <a href="#" class="clearfix">Add more Item</a>
+      </p>
+      <div class="float-right">
+        <button type="button" class="btn btn-primary m-2">
+          Create
+        </button>
+        <button type="button" class="btn btn-secondary m-2">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

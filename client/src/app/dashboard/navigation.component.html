@@ -1,0 +1,41 @@
+  <div id="sidebar">
+      <div class="col theme">
+        <img src="../../assets/img/your_logo.png" class="img-fluid rounded p-1 mx-auto d-block" width="50%" alt="Your Logo">
+      </div>
+      <div class="row my-4">
+        <button class="btn btn-success mx-auto btn-lg" routerLink="/purchaseOrders/add">Add Order</button>
+      </div>
+      <div class="list-group panel">
+          <a routerLink="/dashboard" href="#" class="list-group-item collapsed" data-parent="#sidebar">
+            <i class="fa fa-columns mr-3"></i>
+            <span>Dashboard</span>
+          </a>
+          <a routerLink="/invoices" href="#" class="list-group-item collapsed" data-parent="#sidebar">
+            <i class="fa fa-receipt mr-3"></i> 
+            <span class="">Invoices</span>
+          </a>
+          <a routerLink="/purchaseOrders" href="#" class="list-group-item collapsed" data-parent="#sidebar">
+            <i class="fa fa-shopping-basket mr-3"></i> 
+            <span class="">Purchase Orders</span>
+          </a>
+          <a routerLink="/products" href="#" class="list-group-item collapsed" data-parent="#sidebar">
+            <i class="fa fa-cubes mr-3"></i> 
+            <span class="">Products</span>
+          </a>
+          <a routerLink="/deliveries" href="#" class="list-group-item collapsed" data-parent="#sidebar">
+            <i class="fa fa-truck mr-3"></i> 
+            <span class="">Delivery</span>
+          </a>
+          <a href="#setting_submenu" class="list-group-item collapsed" data-parent="#sidebar" 
+              aria-expanded="false" data-toggle="collapse" id="menu_setting">
+            <i class="fa fa-cog mr-3"></i> 
+            <span class="">Settings</span>
+          </a>
+            <div class="collapse" aria-labelledby="#setting_submenu">
+              <a href="#" class="list-group-item pl-5" data-parent="#menu_setting">
+                <i class="fa fa-book mr-3"></i>
+                <span>Logs</span>
+              </a>
+            </div>
+      </div>
+  </div>

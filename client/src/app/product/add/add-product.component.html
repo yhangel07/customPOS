@@ -1,0 +1,86 @@
+<div class="container p-5">
+  <div class="row">
+    <p><a routerLink="/products">Products</a> > Add Product</p>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="input-group mb-3 d-flex justify-content-end">
+        <div class="align-middle">
+          <input type="checkbox" aria-label="Checkbox for Variation">
+        </div>
+        <span class="ml-2 mr-4">Variations/Sizes</span>
+      </div>
+      <div class="input-group mb-3">
+        <span class="m-2">
+          Product Name
+        </span>
+        <input type="text" class="form-control" placeholder="" aria-label="Product Name">
+      </div>
+      <div class="row text-center">
+        <div class="col-md-1 d-flex align-items-center">
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="fa fa-plus-circle fa-lg text-success" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="fa fa-minus-circle fa-lg text-danger" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="col-md-3 input-group-sm">
+          <span class="m-2">
+            Variation Name
+          </span>
+          <input type="text" class="form-control" placeholder="ex. flavor of product" aria-label="Variation Name">
+        </div>
+        <div class="col-md-2">
+          <span class="m-2">
+            Size
+          </span>
+          <div class="input-group input-group-sm">
+            <input type="text" class="form-control" placeholder="0" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="input-group-text">g</button>
+              </div>
+          </div>
+          <span style="font-size: 12px;">** Click unit to change</span>
+        </div>
+        <div class="col-md-2">
+          <span class="m-2">
+            Purchase Price
+          </span>
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Php</span>
+            </div>
+            <input type="text" class="form-control" placeholder="0.00" aria-label="Purchase Price">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <span class="m-2">
+            Selling Price
+          </span>
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Php</span>
+            </div>
+            <input type="text" class="form-control" placeholder="0.00" aria-label="Purchase Price">
+          </div>
+        </div>
+        <div class="col-md-2 input-group-sm">
+          <span class="m-2">
+            Stock Qty.
+          </span>
+          <input type="text" class="form-control" placeholder="0" aria-label="Stock Quantity">
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary m-2">
+          ADD
+        </button>
+        <button type="button" class="btn btn-secondary m-2">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

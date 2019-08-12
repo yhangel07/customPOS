@@ -1,0 +1,54 @@
+<div class="container p-5">
+  <div class="row">
+    <h3>Products</h3>
+  </div>
+  <button class="btn btn-primary m-2" routerLink="/products/add">
+    <i class="fa fa-plus mr-2"></i> Add Product
+  </button>
+  <button class="btn btn-outline-secondary btn-sm float-right">
+    Select All
+  </button>
+  <div class="row m-2">
+    <div class="card col">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table text-center vertical-align table-hover minified-header">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col" rowspan="2">
+                  <input type="checkbox" aria-label="Select All">
+                </th>
+                <th scope="col" rowspan="2">#</th>
+                <th scope="col" rowspan="2">Product Name</th>
+                <th scope="col" rowspan="2">Variation</th>
+                <th scope="col" rowspan="2">Size</th>
+                <th scope="col" rowspan="1" colspan="2">Price</th>
+                <th scope="col" rowspan="2">Stock Qty.</th>
+                <th scoep="col" rowspan="2">Actions</th>
+              </tr>
+              <tr>
+                <th scope="col" rowspan="1">Purchase</th>
+                <th scope="col" rowspan="1">Selling</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="checkbox" aria-label="Select row">
+                </td>
+                <th scope="row">001</th>
+                <td>Marshmallow</td>
+                <td>Strawberry</td>
+                <td>150 g</td>
+                <td>35</td>
+                <td>60</td>
+                <td>10</td>
+                <td>**Some buttons**</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
